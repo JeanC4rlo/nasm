@@ -19,4 +19,6 @@ _start:
     ; Esse comando move o valor de num para ebx
     mov ebx, [num]
 
+    ; Indica que o programa correu bem (status 1)
+    mov eax, 1
     int 80h
