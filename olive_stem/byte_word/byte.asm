@@ -1,3 +1,5 @@
+; 3 - Working with Bytes and Words
+
 section .data
     num DB 1
     num2 DB 2

@@ -1,3 +1,5 @@
+; 2 - Data Type and Memory Stack
+
 section .data
     ; Para declarar uma variável definimos um nome, um tipo
     ; (quantos bits serão alocados) e um valor.
