@@ -1,12 +1,18 @@
-# Created by https://www.toptal.com/developers/gitignore/api/assembler
-# Edit at https://www.toptal.com/developers/gitignore?templates=assembler
+*
+!*/
+!*.asm
 
-### Assembler ###
-*.exe
-*.o
-*.obj
-*.bc
+!*.md
+!*LICENSE
+!LICENSE*
 
-# End of https://www.toptal.com/developers/gitignore/api/assembler
-
-*.out
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!*.avif
+!*.webp
+!*.mp4
+!*.mp3
+!*.m4a
+!*.ogg
