@@ -1,5 +1,5 @@
 section .data
-    pathname dd "/home/jean/nasm/olive_stem/file/file.txt"
+    pathname dd "file.txt", 0
 
 section .bss
     buffer resb 1024
