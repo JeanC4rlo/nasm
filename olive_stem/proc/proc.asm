@@ -1,17 +1,33 @@
 section .data
 
 section .text
-	global main
+    global main
 
 addTwo:
-	add eax, ebx
+    push ebp
+    mov ebp, esp
+    
+    ; Segundo argumento, que fica abaixo do ret do call de addTwo
+    mov eax, [ebp + 8]
 
-	; Armazena a região de retorno com o program counter, que fica no registrador esp
+    ; Primeiro argumento, que fica abaixo do segundo argumento
+    mov ebx, [ebp + 12]
+
+    ; add eax (primeiro argumento), ebx (segundo argumento)
+	add eax, ebx
+	
+    pop ebp
 	ret
 
 main:
-	mov eax, 4
-	mov ebx, 1
+    ; Armazena na stack (+4 posições)
+	push 4
+	
+	; Armazena na stack (+4 posições)
+	push 1
+
+    ; Armazena na stack (+4 posições)
+	; Armazena a região de retorno com o program counter, que fica no registrador esp
 	call addTwo
 	
 	mov eax, 1
